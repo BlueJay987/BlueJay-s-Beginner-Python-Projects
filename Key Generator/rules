@@ -1,0 +1,20 @@
+Rules for Key generator, so i dont forget
+
+completed code:
+000-262-AIR-6014
+
+All Chunks are separated by a "-"
+
+Chunk 1:
+Always 000
+
+Chunk 2: 3 Digits
+All digits must add to 10.
+
+Chunk 3: 3 Letters
+Convert letters to numbers: A=1 B=2 ETC.
+Sum of digits must be less than 30.
+
+Chunk 4: 4 Digits
+subtract digits (Ex: "0942" 0- 9 - 4 - 2 = 3)
+Difference must be greater than 0
