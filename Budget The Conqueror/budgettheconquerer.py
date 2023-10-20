@@ -2,13 +2,13 @@
 
 #Variables
 def gettarget():
-    with open("/home/bluejay/Documents/Python Projects/Budget The Conqueror/targetdistance.txt") as tarfile:
+    with open("targetdistance.txt") as tarfile:
         global tar_dist
         tar_dist = tarfile.read()
         tar_dist = float(tar_dist)
     
 def getcomp():
-    with open("/home/bluejay/Documents/Python Projects/Budget The Conqueror/compdist.txt") as compfile:
+    with open("compdist.txt") as compfile:
         global comp_dist
         comp_dist = compfile.read()
         comp_dist = float(comp_dist)
@@ -47,7 +47,7 @@ while True:
         add_dist = float(input("Distance to add: "))
         write_dist = comp_dist + add_dist
         write_dist = str(write_dist)
-        addcomp = open("/home/bluejay/Documents/Python Projects/Budget The Conqueror/compdist.txt", "w")
+        addcomp = open("compdist.txt", "w")
         addcomp.write(write_dist)
         print("Miles Logged!")
         addcomp.close()
