@@ -27,7 +27,7 @@ def add():
     add_dist = float(entry.get())
     write_dist = comp_dist + add_dist
     write_dist = str(write_dist)
-    addcomp = open("/home/bluejay/Documents/Python Projects/Budget The Conqueror/compdist.txt", "w")
+    addcomp = open("compdist.txt", "w")
     addcomp.write(write_dist)
     entry.delete(0, tk.END)
     entry.insert(0, "Miles Logged!")
